@@ -12,11 +12,10 @@ class TrackListViewController: UITableViewController {
    
     //инцилизиурем массив
     var trackList = Track.getTrackList()
-    
+     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-
+        navigationItem.leftBarButtonItem = editButtonItem
     }
 
     // MARK: - Table view data source
